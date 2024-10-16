@@ -1,0 +1,89 @@
+
+      /* Slider container */
+      .cs-container {
+        position: relative;
+        width: calc(100% - 300px);
+        overflow: hidden;
+        margin: 50px auto;
+      }
+
+ 
+      .cs-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        cursor: grab;
+      }
+
+      .cs-wrapper.dragging {
+        transition: none; 
+      }
+
+      .cs-item {
+        min-width: 25%; /* 4 items visible */
+     
+        height: 320px;
+        border: 1px solid #E9E9E9;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-right: 10px;
+      }
+
+      .cs-arrows {
+      display: flex;
+        justify-content: center;
+        gap: 100px;
+     
+      }
+
+
+      .cs-bar-container {
+        position: relative;
+        height: 2px;
+        width: 100%;
+        background-color: #C9C9C9;
+        margin-top: 80px;
+        margin-bottom: 60px;
+      }
+
+      .cs-bar {
+        height: 100%;
+        background-color: #212121;
+        width: 0%;
+        transition: width 0.5s ease-in-out;
+      }
+      #leftArrow{
+        rotate: 180deg;
+        cursor: pointer; 
+      }
+      
+      #rightArrow{
+cursor: pointer;     
+ }
+ .cs-arrows svg:hover path{
+    fill: #212121;
+ }
+ 
+ .cs-arrows a{
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+font-weight: normal;
+line-height: 20px;
+font-style: normal;
+text-align: left;
+color: #ffffff;
+cursor: pointer;
+border-bottom: 1px solid white;
+ }
+ .cs-arrows a:hover{
+    color: #212121;
+    border-color: #212121;
+
+ }
+ 
+ @media(width < 1500px){
+  .cs-container{
+    width: 100%;
+  }
+
+}

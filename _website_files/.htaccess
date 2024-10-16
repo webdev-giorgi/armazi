@@ -1,0 +1,22 @@
+#Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine On
+#images|styles|scripts|uploads|bg|_website|_cache|
+RewriteRule ^(images|styles|scripts|uploads|flash|bg|_website|_cache|_javascript|.*\.(doc|docx|xls|xlsx|css|js|jpg|JPG|mp3|jpeg|gif|swf|xml|png|PNG|pdf|ico|zip|rar|php|html|txt|sql|otf|woff|ttf|svg|woff2|webp)) - [L]
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [QSA,L]
+# block access to some sensible files
+<Files ~ "^sftp-config.json|.gitignore|.sass-cache|.htaccess|.git|node_modules">
+  Order allow,deny
+  Deny from all
+</Files>
+
+DirectoryIndex index.html index.php
+
+# force non-www domain
+RewriteCond %{HTTP_HOST} ^tuski\.ge$ [NC]
+RewriteRule . index.php [QSA,L]
+
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://tuski.ge/$1 [R,L]

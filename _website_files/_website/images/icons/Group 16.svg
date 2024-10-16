@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_16" data-name="Group 16" transform="translate(-1631 -995)">
+    <g id="XMLID_834_" transform="translate(1642 1002)">
+      <path id="XMLID_835_" d="M76.958,8.435h1.736v7.147a.255.255,0,0,0,.255.255h2.943a.255.255,0,0,0,.255-.255V8.468h2a.255.255,0,0,0,.254-.226l.3-2.631a.255.255,0,0,0-.254-.285h-2.3V3.677c0-.5.268-.749.8-.749h1.5a.255.255,0,0,0,.255-.255V.257A.255.255,0,0,0,84.448,0H82.376l-.095,0a3.969,3.969,0,0,0-2.6.978A2.722,2.722,0,0,0,78.781,3.4V5.326H76.958a.255.255,0,0,0-.255.255v2.6A.255.255,0,0,0,76.958,8.435Z" transform="translate(-76.703)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1631 995)" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.5">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.75" fill="none"/>
+    </g>
+  </g>
+</svg>
